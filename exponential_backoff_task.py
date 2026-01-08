@@ -16,7 +16,7 @@ def exponential_backoff(
     should_retry: Optional[Callable[[Exception, int], bool]] = None
 ) -> any:
     attempt = 0
-    last_exception = None  # ✅ store last failure safely
+    last_exception = None  
 
     while attempt < max_retries:
         try:
