@@ -1,3 +1,4 @@
+saath/exponential-backoff-v2
 Exponential Backoff Demo (Python)
 
 This project demonstrates task retry logic using exponential backoff with optional jitter in Python. The mechanism retries a task multiple times when it fails, increasing the delay exponentially after each failure. A random jitter is added to avoid synchronized retries. The project also handles scenarios where the task fails even after the maximum number of retries, raising a RetryError.
@@ -64,3 +65,6 @@ Attempt 3: base_delay × 2^2 + jitter
 … and so on, until max_retries is reached.
 
 If the task fails after all attempts, a RetryError is raised to indicate that the operation did not complete successfully.
+
+
+
